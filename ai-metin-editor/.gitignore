@@ -1,0 +1,17 @@
+# Geliştirme dosyaları
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Yedek dosyalar
+*.bak
+*.tmp
+*~
+
+# Log dosyaları
+*.log
+
+# Kullanıcı verileri (isteğe bağlı)
+# user-data/
+# backups/
