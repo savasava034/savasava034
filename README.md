@@ -56,6 +56,17 @@ const sava = {
 
 Bu repository'de çeşitli proje fikirleri ve kod örnekleri bulunmaktadır:
 
+### 🚀 Aktif Projeler
+
+- 📝 **[ai-metin-editor](./ai-metin-editor/)** - **YENİ!** AI destekli metin editörü
+  - Yapay zeka entegrasyonlu yazı editörü
+  - 4 koyu tema seçeneği
+  - OpenAI, Anthropic, Gemini desteği
+  - Komut tabanlı metin düzenleme
+  - **[Hemen deneyin!](./ai-metin-editor/index.html)**
+
+### 📄 Diğer İçerikler
+
 - 📄 **promt.txt** - Kur'an merkezli AI chatbot için prompt şablonları
 - 📄 **open 2.txt** - PyQt6 tabanlı ezoterik platform kodu
 - 📄 **open 3.txt** - Biyografi API entegrasyonu örnekleri
