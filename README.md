@@ -52,6 +52,16 @@ const sava = {
 };
 ```
 
+## 📁 Repository İçeriği
+
+Bu repository'de çeşitli proje fikirleri ve kod örnekleri bulunmaktadır:
+
+- 📄 **promt.txt** - Kur'an merkezli AI chatbot için prompt şablonları
+- 📄 **open 2.txt** - PyQt6 tabanlı ezoterik platform kodu
+- 📄 **open 3.txt** - Biyografi API entegrasyonu örnekleri
+
+🔍 **[Detaylı dosya analizi için tıklayın](./DOSYA_ANALİZİ.md)** - Tüm dosyaların içeriği, kullanım alanları ve proje önerileri
+
 ## 📫 Benimle İletişime Geçin
 
 <div align="center">
