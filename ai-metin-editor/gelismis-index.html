@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelişmiş AI Yazı Stüdyosu</title>
+    <link rel="stylesheet" href="stildosyasi-v2.css">
+</head>
+<body>
+    <div class="yazilim-kapsayici" id="uygulamaKonteyneri">
+        <!-- Üst Kontrol Şeridi -->
+        <nav class="komuta-seridi">
+            <div class="marka-alani">
+                <span class="uygulama-logosu">✍️</span>
+                <h1 class="uygulama-adi">Yazı Stüdyosu</h1>
+            </div>
+            <div class="gorunum-kontrolleri">
+                <button class="vizyon-dugmesi" id="gorselGorunumDegistir" data-aktif="evet">
+                    <span class="dugme-sembol">👁️</span>
+                    <span class="dugme-yazi">Görsel Ön İzleme</span>
+                </button>
+                <button class="vizyon-dugmesi" id="yan-yana-modu">
+                    <span class="dugme-sembol">⚏</span>
+                    <span class="dugme-yazi">İkili Görünüm</span>
+                </button>
+                <button class="vizyon-dugmesi" id="tam-gorunum">
+                    <span class="dugme-sembol">⛶</span>
+                    <span class="dugme-yazi">Maksimum Alan</span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Ana Çalışma Alanı -->
+        <main class="icerik-bolgesi">
+            <!-- Yan Kontrol Paneli -->
+            <section class="yan-kontrol-alani" id="kontrolAlani" data-genislik="350">
+                <div class="panel-surukleyici" id="solPanelSurukle"></div>
+                
+                <!-- Yapılandırma Modülü -->
+                <article class="modul-kutusu">
+                    <header class="modul-ust-cizgi" data-katli="hayir">
+                        <h4 class="modul-basligi">
+                            <span class="ikon-mini">⚙️</span>
+                            AI Yapılandırma
+                        </h4>
+                        <button class="katla-butonu" data-hedef="yapiModulu">−</button>
+                    </header>
+                    <div class="modul-govdesi" id="yapiModulu">
+                        <div class="parametre-satiri">
+                            <label class="parametre-etiketi">Servis Sağlayıcı</label>
+                            <select class="parametre-secici" id="servisSaglayici">
+                                <option value="openai">OpenAI Platform</option>
+                                <option value="anthropic">Anthropic AI</option>
+                                <option value="google">Google AI</option>
+                            </select>
+                        </div>
+                        
+                        <div class="parametre-satiri">
+                            <label class="parametre-etiketi">Erişim Kimliği</label>
+                            <div class="birlesik-giris">
+                                <input type="password" class="parametre-alani" id="erisimKimlik" 
+                                       placeholder="sk-...">
+                                <button class="yan-eylem-dugme" id="kimlikSakla">
+                                    <span>💾</span>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="parametre-satiri">
+                            <label class="parametre-etiketi">Dil Motoru</label>
+                            <select class="parametre-secici" id="dilMotoru">
+                                <option value="gpt-4-turbo">GPT-4 Turbo</option>
+                                <option value="gpt-3.5-turbo">GPT-3.5 Turbo</option>
+                                <option value="claude-3-opus">Claude 3 Opus</option>
+                                <option value="gemini-pro">Gemini Pro</option>
+                            </select>
+                        </div>
+
+                        <div class="parametre-satiri">
+                            <label class="parametre-etiketi">Görsel Şema</label>
+                            <div class="tema-secim-izgara">
+                                <button class="tema-kart" data-tema="lacivert" title="Lacivert">🔷</button>
+                                <button class="tema-kart" data-tema="mor" title="Mor">🟪</button>
+                                <button class="tema-kart" data-tema="yesil" title="Yeşil">🟩</button>
+                                <button class="tema-kart" data-tema="gri" title="Gri">⬛</button>
+                                <button class="tema-kart" data-tema="acik" title="Açık">⬜</button>
+                            </div>
+                        </div>
+
+                        <div class="parametre-satiri">
+                            <label class="parametre-etiketi">Dosya İçe Aktarım</label>
+                            <label class="dosya-yukleyici-cagri" for="dosyaYukle">
+                                <span class="yukle-ikonu">📂</span>
+                                <span class="yukle-metni">Dosya Seç</span>
+                                <input type="file" id="dosyaYukle" class="gizli-dosya-girisi" 
+                                       accept=".txt,.md,.html,.doc,.docx,.pdf" multiple>
+                            </label>
+                            <div id="dosyaKonteyner" class="yuklu-dosya-listesi"></div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Konuşma Modülü -->
+                <article class="modul-kutusu esnek-modul">
+                    <header class="modul-ust-cizgi">
+                        <h4 class="modul-basligi">
+                            <span class="ikon-mini">💭</span>
+                            AI Diyalog
+                        </h4>
+                        <div class="modul-aksiyonlar">
+                            <button class="mini-aksiyon" id="konusmaTemizle" title="Geçmişi Temizle">🗑️</button>
+                        </div>
+                    </header>
+                    <div class="modul-govdesi esnek-icerik">
+                        <div id="diyalogKonteyner" class="konusma-akisi">
+                            <div class="baloncuk ai-baloncugu">
+                                <div class="baloncuk-icerik">
+                                    <strong class="konusan-kimlik">AI Asistan</strong>
+                                    <p class="mesaj-govdesi">Merhaba! Size yardımcı olabilirim:</p>
+                                    <ul class="yetenek-listesi">
+                                        <li>📝 Metin oluşturma ve düzenleme</li>
+                                        <li>🔍 Akıllı arama ve değiştirme</li>
+                                        <li>📊 İçerik analizi ve raporlama</li>
+                                        <li>🎨 Format ve stil düzenleme</li>
+                                        <li>🌐 Çoklu format dönüşüm</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mesaj-giris-alani">
+                            <textarea id="kullaniciKomut" class="komut-alani" 
+                                      placeholder="AI'ya komutunuzu yazın... (Ctrl+Enter: Gönder)" 
+                                      rows="2"></textarea>
+                            <button id="komutGonder" class="gonder-butonu">
+                                <span class="gonder-oku">➤</span>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Merkezi Yazı Alanı -->
+            <section class="merkez-editor-alani" id="yaziAlani">
+                <!-- Biçimlendirme Araç Paleti -->
+                <div class="bicim-palet" id="biçimPaleti">
+                    <div class="palet-grubu">
+                        <button class="palet-araci" data-islem="kalin" title="Kalın (Ctrl+B)">
+                            <strong>B</strong>
+                        </button>
+                        <button class="palet-araci" data-islem="egik" title="Eğik (Ctrl+I)">
+                            <em>I</em>
+                        </button>
+                        <button class="palet-araci" data-islem="alticizili" title="Alt Çizgi (Ctrl+U)">
+                            <u>U</u>
+                        </button>
+                    </div>
+                    <span class="palet-seperator"></span>
+                    <div class="palet-grubu">
+                        <button class="palet-araci" data-islem="baslik1">H₁</button>
+                        <button class="palet-araci" data-islem="baslik2">H₂</button>
+                        <button class="palet-araci" data-islem="baslik3">H₃</button>
+                    </div>
+                    <span class="palet-seperator"></span>
+                    <div class="palet-grubu">
+                        <button class="palet-araci" data-islem="maddeliste" title="Madde Liste">●</button>
+                        <button class="palet-araci" data-islem="sayiliste" title="Sayı Liste">1.</button>
+                        <button class="palet-araci" data-islem="alinti" title="Alıntı">"</button>
+                        <button class="palet-araci" data-islem="kod" title="Kod">&lt;/&gt;</button>
+                    </div>
+                    <span class="palet-seperator"></span>
+                    <div class="palet-grubu">
+                        <button class="palet-araci" data-islem="baglanti" title="Bağlantı">🔗</button>
+                        <button class="palet-araci" data-islem="gorsel" title="Görsel">🖼️</button>
+                        <button class="palet-araci" data-islem="tablo" title="Tablo">⊞</button>
+                    </div>
+                    <span class="palet-seperator"></span>
+                    <div class="palet-grubu">
+                        <button class="palet-araci" data-islem="geri" title="Geri (Ctrl+Z)">↶</button>
+                        <button class="palet-araci" data-islem="ileri" title="İleri (Ctrl+Y)">↷</button>
+                    </div>
+                </div>
+
+                <!-- Belge Bilgi Çubuğu -->
+                <header class="belge-bilgi-cubugu">
+                    <input type="text" id="belgeBasi" class="baslik-giris" 
+                           placeholder="Belge başlığı..." value="Başlıksız">
+                    
+                    <div class="metrik-paneli">
+                        <span class="metrik-kapsul" id="kelimeMetrik">
+                            <span class="metrik-ikon">📝</span>
+                            <span class="metrik-sayi">0</span>
+                        </span>
+                        <span class="metrik-kapsul" id="karakterMetrik">
+                            <span class="metrik-ikon">🔤</span>
+                            <span class="metrik-sayi">0</span>
+                        </span>
+                        <span class="metrik-kapsul" id="satirMetrik">
+                            <span class="metrik-ikon">📄</span>
+                            <span class="metrik-sayi">0</span>
+                        </span>
+                        <span class="metrik-kapsul" id="okumaSureMetrik">
+                            <span class="metrik-ikon">⏱️</span>
+                            <span class="metrik-sayi">0dk</span>
+                        </span>
+                    </div>
+
+                    <div class="belge-eylemleri">
+                        <button class="eylem-ikonu" id="yeniBelge" title="Yeni Belge">🆕</button>
+                        <button class="eylem-ikonu" id="belgeSakla" title="Kaydet">💾</button>
+                        <button class="eylem-ikonu" id="disariCikar" title="Dışarı Çıkar">📤</button>
+                        <div class="aksiyon-menu" id="cikarimMenu">
+                            <button class="menu-oge" data-tip="txt">📄 Metin</button>
+                            <button class="menu-oge" data-tip="md">📝 Markdown</button>
+                            <button class="menu-oge" data-tip="html">🌐 HTML</button>
+                            <button class="menu-oge" data-tip="pdf">📕 PDF</button>
+                        </div>
+                        <button class="eylem-ikonu" id="yaziciyaGonder" title="Yazdır">🖨️</button>
+                        <button class="eylem-ikonu" id="aramaAc" title="Ara">🔍</button>
+                    </div>
+                </header>
+
+                <!-- Arama Çubuğu -->
+                <div class="arama-cubugu" id="aramaCubugu" style="display:none;">
+                    <input type="text" id="aramaMetni" class="arama-girisi" placeholder="Ara...">
+                    <input type="text" id="degistirMetni" class="arama-girisi" placeholder="Değiştir...">
+                    <button class="arama-kontrolu" id="sonrakiBul">▼</button>
+                    <button class="arama-kontrolu" id="oncekiBul">▲</button>
+                    <button class="arama-kontrolu" id="tekDegistir">↻</button>
+                    <button class="arama-kontrolu" id="tumDegistir">⇄</button>
+                    <button class="arama-kontrolu" id="aramaKapat">✕</button>
+                </div>
+
+                <!-- Yazı Tuvalı -->
+                <div class="yazi-konteyner">
+                    <div class="satir-gosterge" id="satirNumaralari"></div>
+                    <div id="yaziTuvali" class="icerik-editoru" 
+                         contenteditable="true" 
+                         spellcheck="true"
+                         data-placeholder="Yazmaya başlayın veya AI asistana komut verin..."></div>
+                </div>
+            </section>
+
+            <!-- Sağ Önizleme Paneli -->
+            <section class="onizleme-paneli" id="onizlemeBolgesi" data-genislik="400">
+                <div class="panel-surukleyici" id="sagPanelSurukle"></div>
+                <header class="panel-ustbilgi">
+                    <h4 class="panel-basligi">
+                        <span class="ikon-mini">👁️</span>
+                        Canlı Önizleme
+                    </h4>
+                    <div class="panel-kontroller">
+                        <select id="onizlemeTipi" class="kucuk-secim">
+                            <option value="markdown">Markdown</option>
+                            <option value="html">HTML</option>
+                            <option value="duzmetin">Düz</option>
+                        </select>
+                        <button class="panel-kapat" id="onizlemeKapat">✕</button>
+                    </div>
+                </header>
+                <div id="onizlemeIcerik" class="onizleme-gorunum"></div>
+            </section>
+        </main>
+
+        <!-- Sürükle Bırak Katmanı -->
+        <div class="surukle-birak-katman" id="dosyaSurukleKatman">
+            <div class="katman-icerik">
+                <div class="katman-simge">📂</div>
+                <p class="katman-mesaj">Dosyaları buraya bırakın</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked@11.1.1/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.8/dist/purify.min.js"></script>
+    <script src="gelismis-motor.js"></script>
+</body>
+</html>
