@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yapay Zeka Yazı Editörü</title>
+    <link rel="stylesheet" href="tema.css">
+</head>
+<body>
+    <main class="ana-cerceve">
+        <aside class="sol-kolon">
+            <section class="yapilandirma-kutusu">
+                <h3 class="baslik-mini">⚙️ Yapılandırma</h3>
+                <div class="yapilandirma-icerik">
+                    <div class="girdi-grup">
+                        <span class="etiket-metin">Yapay Zeka Servisi:</span>
+                        <select id="yapayzeka-secici" class="secim-kutusu">
+                            <option value="openai">OpenAI GPT</option>
+                            <option value="anthropic">Anthropic Claude</option>
+                            <option value="google">Google Gemini</option>
+                        </select>
+                    </div>
+                    
+                    <div class="girdi-grup">
+                        <span class="etiket-metin">API Erişim Kodu:</span>
+                        <input type="password" id="erisim-kodu" class="metin-girisi" placeholder="Erişim kodunuzu buraya yazın">
+                        <button id="kaydet-dugme" class="ufak-dugme">Sakla</button>
+                    </div>
+                    
+                    <div class="girdi-grup">
+                        <span class="etiket-metin">Dil Modeli:</span>
+                        <select id="model-secimi" class="secim-kutusu">
+                            <option value="gpt-4-turbo">GPT-4 Turbo</option>
+                            <option value="gpt-3.5-turbo">GPT-3.5 Turbo</option>
+                            <option value="claude-3-opus">Claude 3 Opus</option>
+                            <option value="gemini-pro">Gemini Pro</option>
+                        </select>
+                    </div>
+
+                    <div class="girdi-grup">
+                        <span class="etiket-metin">Görsel Tema:</span>
+                        <select id="tema-degistirici" class="secim-kutusu">
+                            <option value="koyu-mavi">Koyu Mavi Ton</option>
+                            <option value="koyu-mor">Koyu Mor Ton</option>
+                            <option value="koyu-yesil">Koyu Yeşil Ton</option>
+                            <option value="koyu-gri">Koyu Gri Ton</option>
+                        </select>
+                    </div>
+
+                    <div class="girdi-grup">
+                        <span class="etiket-metin">Dosya Yükle:</span>
+                        <input type="file" id="dosya-yukleyici" class="dosya-secici" accept=".txt,.md,.doc,.docx,.pdf" multiple>
+                        <div id="yuklenen-dosyalar" class="dosya-listesi"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sohbet-kutusu">
+                <h3 class="baslik-mini">💬 Yapay Zeka Yardımcısı</h3>
+                <div id="mesaj-alani" class="mesajlar-cerceve">
+                    <div class="mesaj asistan-mesaji">
+                        <strong class="gonderen-adi">Yardımcı:</strong> 
+                        <span class="mesaj-metni">Merhaba! Metniniz üzerinde her türlü işlemi yapabilirim. Örnekler:
+                        <ul class="ornek-liste">
+                            <li>"Baştan 3 paragrafı sil"</li>
+                            <li>"Metni 5 bölüme ayır ve başlık ekle"</li>
+                            <li>"Kısa bir özet hazırla"</li>
+                            <li>"Dilbilgisi hatalarını düzelt"</li>
+                            <li>"Yüklediğim dosyalardan veri al ve ekle"</li>
+                        </ul>
+                        </span>
+                    </div>
+                </div>
+                <div class="sohbet-girdi-alani">
+                    <textarea id="komut-girisi" class="sohbet-metin-kutusu" placeholder="Komutunuzu yazın ve Enter'a basın..."></textarea>
+                    <button id="gonder-dugme" class="ana-dugme">▶ Gönder</button>
+                </div>
+            </section>
+        </aside>
+
+        <article class="sag-kolon">
+            <header class="yazi-ust-cubuk">
+                <h2 class="ana-baslik">📝 Yazı Alanı</h2>
+                <div class="istatistik-kutusu">
+                    <span id="kelime-sayaci" class="istatistik-eleman">Kelime: 0</span>
+                    <span id="karakter-sayaci" class="istatistik-eleman">Harf: 0</span>
+                    <span id="sayfa-tahmini" class="istatistik-eleman">Sayfa: 0</span>
+                </div>
+                <nav class="islem-dugmeleri">
+                    <button id="yeni-belge" class="simge-dugme" title="Yeni Belge">🆕</button>
+                    <button id="kaydet-belge" class="simge-dugme" title="Belgeyi Kaydet">💾</button>
+                    <button id="disa-aktar" class="simge-dugme" title="Dışa Aktar">📥</button>
+                    <button id="yazdir" class="simge-dugme" title="Yazdır">🖨️</button>
+                </nav>
+            </header>
+            <div id="yazi-tuvali" class="yazi-alani" contenteditable="true" spellcheck="true"></div>
+        </article>
+    </main>
+
+    <script src="islevler.js"></script>
+</body>
+</html>

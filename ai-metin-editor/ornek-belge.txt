@@ -1,0 +1,75 @@
+Yapay Zeka Destekli Metin Editörü - Örnek Belge
+
+Bu belge, AI destekli metin editörünün yeteneklerini test etmek için hazırlanmıştır. Dosya yükleme özelliğini test etmek için bu belgeyi editöre yükleyebilirsiniz.
+
+GİRİŞ
+
+Modern teknoloji çağında, yazı yazma süreçleri büyük bir dönüşüm geçirmektedir. Geleneksel metin editörlerinin yerini, yapay zeka destekli akıllı yazma araçları almaktadır. Bu yeni nesil araçlar, yazarların işini kolaylaştırırken, yaratıcılığı da artırmaktadır.
+
+YAPAY ZEKA VE YAZMA SÜRECİ
+
+Yapay zeka, yazma sürecinde birçok aşamada yardımcı olabilir:
+
+1. İçerik Oluşturma: AI, verilen konuda orijinal içerik üretebilir.
+2. Düzenleme: Yazım hatalarını otomatik düzeltir ve dil bilgisi kontrolü yapar.
+3. Stil İyileştirme: Metnin akıcılığını artırır ve daha profesyonel hale getirir.
+4. Özet Çıkarma: Uzun metinlerden kısa ve öz özetler oluşturur.
+5. Çeviri: Metni farklı dillere çevirebilir.
+
+KULLANIM ALANLARI
+
+Akademik Yazım
+Öğrenciler ve araştırmacılar, makale yazarken AI desteğinden faydalanabilir. Kaynak araştırması, referans düzenleme ve literatür taraması gibi işlemler kolaylaşır.
+
+İçerik Üretimi
+Blog yazarları, gazeteciler ve içerik üreticileri için AI, hız ve kalite dengesini sağlar. Düzenli içerik üretimi gerektiren profesyoneller için büyük avantaj sunar.
+
+Kurumsal İletişim
+Şirketler, rapor hazırlama, e-posta yazma ve dokümantasyon işlemlerinde AI destekli araçları kullanarak zamandan tasarruf ederler.
+
+Yaratıcı Yazarlık
+Roman, hikaye ve senaryo yazarları, AI'ı fikir geliştirme aşamasında kullanabilir. Karakter gelişimi, olay örgüsü ve diyalog yazımında ilham alabilirler.
+
+TEKNİK ÖZELLİKLER
+
+Bu editör, aşağıdaki teknik özellikleri sunar:
+
+- Çoklu AI Modeli Desteği: OpenAI GPT-4, Anthropic Claude, Google Gemini
+- Gerçek Zamanlı İstatistikler: Kelime, karakter ve sayfa sayısı
+- Otomatik Kaydetme: Her 2 dakikada bir yerel yedekleme
+- Tema Seçenekleri: 4 farklı koyu tema
+- Dosya Desteği: TXT, MD, DOC, DOCX, PDF formatları
+- Responsive Tasarım: Masaüstü ve tablet uyumlu
+
+GELECEĞİN YAZMA ARAÇLARI
+
+Yapay zeka destekli yazma araçları, gelecekte daha da gelişecektir. Beklenen yenilikler:
+
+- Ses tanıma entegrasyonu
+- Gerçek zamanlı işbirliği özellikleri
+- Daha gelişmiş bağlam anlama
+- Çoklu dil desteği
+- Görsel içerik entegrasyonu
+- Gelişmiş analitik ve raporlama
+
+SONUÇ
+
+Yapay zeka, yazma sürecini dönüştürmektedir. Ancak, teknolojinin insan yaratıcılığının yerine geçmediğini, onu desteklediğini unutmamak gerekir. En iyi sonuçlar, insan zekası ile yapay zekanın birlikte çalıştığı durumlarda ortaya çıkar.
+
+Bu editör, tam da bu felsefeyle tasarlanmıştır: Yazarın kontrolünde, AI'ın desteğinde bir yazma deneyimi sunmak.
+
+---
+
+TEST KOMUTLARİ
+
+Bu belgeyi yükledikten sonra şu komutları deneyebilirsiniz:
+
+1. "Bu belgenin özetini 3 paragrafta çıkar"
+2. "Belgedeki ana başlıkları listele"
+3. "Teknik özellikler bölümünü daha detaylı yap"
+4. "Sonuç bölümünü daha etkileyici hale getir"
+5. "Belgeden 'yapay zeka' kelimesinin kaç kez geçtiğini say"
+6. "Akademik yazım bölümünü genişlet"
+7. "Belgenin sonuna kaynakça bölümü ekle"
+
+İyi çalışmalar!
