@@ -13,10 +13,66 @@
         <aside class="yan-panel">
             <!-- Hızlı Butonlar -->
             <div class="hizli-butonlar">
-                <button class="aksiyon-btn" id="yeniBtn" title="Yeni Belge">🆕 Yeni</button>
-                <button class="aksiyon-btn" id="kaydetBtn" title="Kaydet">💾 Kaydet</button>
+                <button class="aksiyon-btn" id="yeniBtn" title="Yeni Belge (Ctrl+N)">🆕 Yeni</button>
+                <button class="aksiyon-btn" id="kaydetBtn" title="Kaydet (Ctrl+S)">💾 Kaydet</button>
                 <button class="aksiyon-btn" id="aktarBtn" title="İndir">📥 İndir</button>
                 <button class="aksiyon-btn" id="temaBtn" title="Tema">🎨 Tema</button>
+                <button class="aksiyon-btn" id="ayarBtn" title="Ayarlar">⚙️ Ayarlar</button>
+                <button class="aksiyon-btn" id="kisayolBtn" title="Kısayollar (Ctrl+/)">⌨️ Yardım</button>
+            </div>
+            
+            <!-- Ayarlar Paneli -->
+            <div class="ayarlar-paneli" id="ayarlarPanel" style="display: none;">
+                <div class="panel-baslik">
+                    <span>⚙️ Ayarlar</span>
+                    <button class="kapat-btn" id="ayarKapat">✕</button>
+                </div>
+                <div class="ayar-grup">
+                    <label>Font Boyutu:</label>
+                    <input type="range" id="fontBoyut" min="12" max="24" value="16" class="slider">
+                    <span id="fontBoyutDeger">16px</span>
+                </div>
+                <div class="ayar-grup">
+                    <label>Satır Yüksekliği:</label>
+                    <input type="range" id="satirYukseklik" min="1.2" max="2.4" step="0.1" value="1.8" class="slider">
+                    <span id="satirYukseklikDeger">1.8</span>
+                </div>
+                <div class="ayar-grup">
+                    <label>Canvas Genişliği:</label>
+                    <select id="canvasGenislik" class="ayar-secim-kucuk">
+                        <option value="600px">Dar (600px)</option>
+                        <option value="800px" selected>Normal (800px)</option>
+                        <option value="1000px">Geniş (1000px)</option>
+                        <option value="100%">Tam Genişlik</option>
+                    </select>
+                </div>
+                <div class="ayar-grup">
+                    <label>Yazı Tipi:</label>
+                    <select id="yaziTipi" class="ayar-secim-kucuk">
+                        <option value="Georgia, serif">Georgia (Klasik)</option>
+                        <option value="'Merriweather', serif">Merriweather</option>
+                        <option value="'Inter', sans-serif">Inter (Modern)</option>
+                        <option value="'Courier New', monospace">Courier (Yazı Makinesi)</option>
+                    </select>
+                </div>
+                <div class="ayar-grup">
+                    <label>Otomatik Kayıt:</label>
+                    <select id="otomatikKayit" class="ayar-secim-kucuk">
+                        <option value="30">30 saniye</option>
+                        <option value="60">1 dakika</option>
+                        <option value="120" selected>2 dakika</option>
+                        <option value="300">5 dakika</option>
+                    </select>
+                </div>
+                <div class="ayar-grup">
+                    <label>AI Sıcaklık (Yaratıcılık):</label>
+                    <input type="range" id="aiSicaklik" min="0" max="1" step="0.1" value="0.7" class="slider">
+                    <span id="aiSicaklikDeger">0.7</span>
+                </div>
+                <div class="ayar-grup">
+                    <label>Kelime Hedefi:</label>
+                    <input type="number" id="kelimeHedef" min="0" max="50000" step="100" value="0" class="ayar-giris-kucuk" placeholder="0 = Yok">
+                </div>
             </div>
 
             <!-- Bot Alanı -->
@@ -25,15 +81,24 @@
                 
                 <!-- Ayarlar -->
                 <div class="bot-ayarlar">
+                    <select id="aiSagla" class="ayar-secim">
+                        <option value="openai">OpenAI</option>
+                        <option value="anthropic">Anthropic</option>
+                        <option value="google">Google</option>
+                    </select>
+                    
                     <select id="aiModel" class="ayar-secim">
                         <option value="gpt-4-turbo">GPT-4 Turbo</option>
+                        <option value="gpt-4">GPT-4</option>
                         <option value="gpt-3.5-turbo">GPT-3.5 Turbo</option>
-                        <option value="claude-3-opus">Claude 3</option>
+                        <option value="claude-3-opus">Claude 3 Opus</option>
+                        <option value="claude-3-sonnet">Claude 3 Sonnet</option>
+                        <option value="gemini-pro">Gemini Pro</option>
                     </select>
                     
                     <input type="password" id="apiKey" class="ayar-giris" 
                            placeholder="API Key...">
-                    <button id="apiKaydet" class="kaydet-btn">Kaydet</button>
+                    <button id="apiKaydet" class="kaydet-btn">💾 Kaydet</button>
                 </div>
 
                 <!-- Mesajlar -->
@@ -60,13 +125,62 @@
         <!-- Ana Canvas -->
         <main class="yazma-alani">
             <div class="ust-bilgi">
-                <span id="kelimeSayisi">0 kelime</span>
-                <span id="karakterSayisi">0 karakter</span>
+                <div class="istatistik-grup">
+                    <span id="kelimeSayisi" class="stat-badge">0 kelime</span>
+                    <span id="karakterSayisi" class="stat-badge">0 karakter</span>
+                    <span id="satirSayisi" class="stat-badge">0 satır</span>
+                    <span id="okumaSure" class="stat-badge">0dk okuma</span>
+                </div>
+                <div class="hedef-grup" id="hedefGrup" style="display: none;">
+                    <span class="hedef-metin">Hedef:</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="hedefProgress"></div>
+                    </div>
+                    <span id="hedefYuzde" class="hedef-yuzde">0%</span>
+                </div>
             </div>
-            <textarea id="yaziCanvas" 
-                      class="canvas" 
-                      placeholder="Yazmaya başlayın veya AI asistana komut verin..."></textarea>
+            <div class="canvas-konteyner">
+                <textarea id="yaziCanvas" 
+                          class="canvas" 
+                          placeholder="Yazmaya başlayın veya AI asistana komut verin... (Ctrl+/ kısayollar için)"></textarea>
+            </div>
         </main>
+    </div>
+
+    <!-- Kısayol Yardım Modal -->
+    <div class="modal" id="kisayolModal" style="display: none;">
+        <div class="modal-icerik">
+            <div class="modal-baslik">
+                <span>⌨️ Klavye Kısayolları</span>
+                <button class="kapat-btn" id="kisayolKapat">✕</button>
+            </div>
+            <div class="kisayol-liste">
+                <div class="kisayol-item">
+                    <kbd>Ctrl</kbd> + <kbd>N</kbd>
+                    <span>Yeni Belge</span>
+                </div>
+                <div class="kisayol-item">
+                    <kbd>Ctrl</kbd> + <kbd>S</kbd>
+                    <span>Kaydet</span>
+                </div>
+                <div class="kisayol-item">
+                    <kbd>Ctrl</kbd> + <kbd>Enter</kbd>
+                    <span>AI'ya Gönder</span>
+                </div>
+                <div class="kisayol-item">
+                    <kbd>Ctrl</kbd> + <kbd>/</kbd>
+                    <span>Kısayolları Göster</span>
+                </div>
+                <div class="kisayol-item">
+                    <kbd>Alt</kbd> + <kbd>T</kbd>
+                    <span>Tema Değiştir</span>
+                </div>
+                <div class="kisayol-item">
+                    <kbd>Alt</kbd> + <kbd>A</kbd>
+                    <span>Ayarlar</span>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="basit-motor.js"></script>
