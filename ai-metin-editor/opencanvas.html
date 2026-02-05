@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Yazı Canvas</title>
+    <link rel="stylesheet" href="basit-stil.css">
+</head>
+<body>
+    <!-- Ana Konteyner -->
+    <div class="ana-kapsayici">
+        <!-- Yan Panel -->
+        <aside class="yan-panel">
+            <!-- Hızlı Butonlar -->
+            <div class="hizli-butonlar">
+                <button class="aksiyon-btn" id="yeniBtn" title="Yeni Belge">🆕 Yeni</button>
+                <button class="aksiyon-btn" id="kaydetBtn" title="Kaydet">💾 Kaydet</button>
+                <button class="aksiyon-btn" id="aktarBtn" title="İndir">📥 İndir</button>
+                <button class="aksiyon-btn" id="temaBtn" title="Tema">🎨 Tema</button>
+            </div>
+
+            <!-- Bot Alanı -->
+            <div class="bot-kismi">
+                <div class="bot-baslik">🤖 AI Asistan</div>
+                
+                <!-- Ayarlar -->
+                <div class="bot-ayarlar">
+                    <select id="aiModel" class="ayar-secim">
+                        <option value="gpt-4-turbo">GPT-4 Turbo</option>
+                        <option value="gpt-3.5-turbo">GPT-3.5 Turbo</option>
+                        <option value="claude-3-opus">Claude 3</option>
+                    </select>
+                    
+                    <input type="password" id="apiKey" class="ayar-giris" 
+                           placeholder="API Key...">
+                    <button id="apiKaydet" class="kaydet-btn">Kaydet</button>
+                </div>
+
+                <!-- Mesajlar -->
+                <div class="mesaj-kutusu" id="mesajKutusu">
+                    <div class="bot-mesaj">
+                        <strong>AI:</strong> Merhaba! Size yardımcı olabilirim.
+                        <ul style="margin: 8px 0 0 20px; font-size: 12px;">
+                            <li>"100 sayfa roman yaz"</li>
+                            <li>"Metni özetle"</li>
+                            <li>"Başlık ekle"</li>
+                            <li>"Yazım hatalarını düzelt"</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Komut Girişi -->
+                <div class="komut-alani">
+                    <textarea id="komutGiris" placeholder="AI'ya ne yaptırmak istersiniz?" rows="3"></textarea>
+                    <button id="gonderBtn" class="gonder-btn">▶ Gönder</button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Ana Canvas -->
+        <main class="yazma-alani">
+            <div class="ust-bilgi">
+                <span id="kelimeSayisi">0 kelime</span>
+                <span id="karakterSayisi">0 karakter</span>
+            </div>
+            <textarea id="yaziCanvas" 
+                      class="canvas" 
+                      placeholder="Yazmaya başlayın veya AI asistana komut verin..."></textarea>
+        </main>
+    </div>
+
+    <script src="basit-motor.js"></script>
+</body>
+</html>

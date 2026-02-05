@@ -1,0 +1,314 @@
+/* Temiz ve Minimal Stil - OpenCanvas Tarzı */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --koyu-zemin: #1a1a1a;
+    --orta-zemin: #242424;
+    --acik-zemin: #2e2e2e;
+    --yazi-renk: #e8e8e8;
+    --soluk-yazi: #a8a8a8;
+    --vurgu-renk: #4a9eff;
+    --kenari: #3a3a3a;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    background: var(--koyu-zemin);
+    color: var(--yazi-renk);
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Ana Layout - Yan panel + Canvas */
+.ana-kapsayici {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Yan Panel - 300px sabit */
+.yan-panel {
+    width: 300px;
+    background: var(--orta-zemin);
+    border-right: 1px solid var(--kenari);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hızlı Butonlar - Üstte */
+.hizli-butonlar {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    border-bottom: 1px solid var(--kenari);
+}
+
+.aksiyon-btn {
+    padding: 12px;
+    background: var(--acik-zemin);
+    border: 1px solid var(--kenari);
+    border-radius: 8px;
+    color: var(--yazi-renk);
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.aksiyon-btn:hover {
+    background: var(--vurgu-renk);
+    transform: translateY(-2px);
+}
+
+/* Bot Kısmı - Altta, Esnek */
+.bot-kismi {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    overflow: hidden;
+}
+
+.bot-baslik {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--vurgu-renk);
+}
+
+/* Bot Ayarları */
+.bot-ayarlar {
+    margin-bottom: 12px;
+}
+
+.ayar-secim,
+.ayar-giris {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 8px;
+    background: var(--koyu-zemin);
+    border: 1px solid var(--kenari);
+    border-radius: 6px;
+    color: var(--yazi-renk);
+    font-size: 13px;
+}
+
+.ayar-secim:focus,
+.ayar-giris:focus {
+    outline: none;
+    border-color: var(--vurgu-renk);
+}
+
+.kaydet-btn {
+    width: 100%;
+    padding: 8px;
+    background: var(--vurgu-renk);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.kaydet-btn:hover {
+    opacity: 0.9;
+}
+
+/* Mesaj Kutusu - Esnek, Kaydırılabilir */
+.mesaj-kutusu {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 12px;
+    padding: 12px;
+    background: var(--koyu-zemin);
+    border-radius: 8px;
+}
+
+.bot-mesaj,
+.kullanici-mesaj {
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 1.5;
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.bot-mesaj {
+    background: var(--acik-zemin);
+    border-left: 3px solid var(--vurgu-renk);
+}
+
+.kullanici-mesaj {
+    background: var(--vurgu-renk);
+    color: white;
+    text-align: right;
+}
+
+.bot-mesaj strong,
+.kullanici-mesaj strong {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 11px;
+    opacity: 0.8;
+}
+
+/* Komut Alanı - Altta Sabit */
+.komut-alani {
+    display: flex;
+    gap: 8px;
+}
+
+#komutGiris {
+    flex: 1;
+    padding: 10px;
+    background: var(--koyu-zemin);
+    border: 1px solid var(--kenari);
+    border-radius: 8px;
+    color: var(--yazi-renk);
+    font-family: inherit;
+    font-size: 13px;
+    resize: none;
+}
+
+#komutGiris:focus {
+    outline: none;
+    border-color: var(--vurgu-renk);
+}
+
+.gonder-btn {
+    width: 50px;
+    background: var(--vurgu-renk);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.gonder-btn:hover {
+    transform: scale(1.05);
+}
+
+.gonder-btn:active {
+    transform: scale(0.95);
+}
+
+/* Ana Canvas - Tam Sayfa */
+.yazma-alani {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: var(--koyu-zemin);
+}
+
+/* Üst Bilgi - İstatistikler */
+.ust-bilgi {
+    padding: 12px 20px;
+    background: var(--orta-zemin);
+    border-bottom: 1px solid var(--kenari);
+    display: flex;
+    gap: 20px;
+    font-size: 12px;
+    color: var(--soluk-yazi);
+}
+
+/* Canvas - Büyük Textarea */
+.canvas {
+    flex: 1;
+    padding: 30px 40px;
+    background: var(--koyu-zemin);
+    border: none;
+    color: var(--yazi-renk);
+    font-size: 16px;
+    line-height: 1.8;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    resize: none;
+    overflow-y: auto;
+}
+
+.canvas:focus {
+    outline: none;
+}
+
+.canvas::placeholder {
+    color: var(--soluk-yazi);
+    opacity: 0.5;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--orta-zemin);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--acik-zemin);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--kenari);
+}
+
+/* Tema Varyasyonları */
+body.acik-tema {
+    --koyu-zemin: #ffffff;
+    --orta-zemin: #f5f5f5;
+    --acik-zemin: #e8e8e8;
+    --yazi-renk: #1a1a1a;
+    --soluk-yazi: #666666;
+    --vurgu-renk: #4a9eff;
+    --kenari: #d0d0d0;
+}
+
+body.mor-tema {
+    --koyu-zemin: #1a0d2e;
+    --orta-zemin: #2a1a4a;
+    --acik-zemin: #3a2858;
+    --vurgu-renk: #a855f7;
+}
+
+body.yesil-tema {
+    --koyu-zemin: #0d1f0d;
+    --orta-zemin: #1a3a1a;
+    --acik-zemin: #264826;
+    --vurgu-renk: #52c271;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .yan-panel {
+        width: 100%;
+        max-height: 50vh;
+        border-right: none;
+        border-bottom: 1px solid var(--kenari);
+    }
+    
+    .ana-kapsayici {
+        flex-direction: column;
+    }
+}
