@@ -60,7 +60,9 @@ Bu repository'de çeşitli proje fikirleri ve kod örnekleri bulunmaktadır:
 - 📄 **open 2.txt** - PyQt6 tabanlı ezoterik platform kodu
 - 📄 **open 3.txt** - Biyografi API entegrasyonu örnekleri
 
-🔍 **[Detaylı dosya analizi için tıklayın](./DOSYA_ANALİZİ.md)** - Tüm dosyaların içeriği, kullanım alanları ve proje önerileri
+📊 **[Hızlı özet için tıklayın](./ÖZET.md)** - Kısa ve öz bilgi
+
+🔍 **[Detaylı analiz için tıklayın](./DOSYA_ANALİZİ.md)** - Kapsamlı içerik analizi ve proje önerileri
 
 ## 📫 Benimle İletişime Geçin
 
