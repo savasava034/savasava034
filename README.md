@@ -58,7 +58,16 @@ Bu repository'de çeşitli proje fikirleri ve kod örnekleri bulunmaktadır:
 
 ### 🚀 Aktif Projeler
 
-- 📝 **[ai-metin-editor](./ai-metin-editor/)** - **YENİ!** AI destekli metin editörü
+- 🇹🇷 **[ataturk-arsivi](./ataturk-arsivi/)** - **YENİ!** Atatürk Arşiv Sistemi
+  - Mustafa Kemal Atatürk'ün sözleri arşivi
+  - Tekrarsız (mükerrer olmayan) kayıt sistemi
+  - Kategorilendirme ve gelişmiş arama
+  - Python API ve interaktif arayüz
+  - JSON/TXT/MD dışa aktarma
+  - 20+ örnek söz ile hazır
+  - **[Hızlı Başlangıç Kılavuzu](./ataturk-arsivi/HIZLI-BASLANGIC.md)**
+
+- 📝 **[ai-metin-editor](./ai-metin-editor/)** - AI destekli metin editörü
   - Yapay zeka entegrasyonlu yazı editörü
   - 4 koyu tema seçeneği
   - OpenAI, Anthropic, Gemini desteği
