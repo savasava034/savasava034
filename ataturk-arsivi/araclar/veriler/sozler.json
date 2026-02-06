@@ -3,7 +3,7 @@
     "versiyon": "1.0",
     "olusturma_tarihi": "2026-02-06",
     "aciklama": "Mustafa Kemal Atatürk'ün sözleri, cümleleri ve paragraflarından oluşan kapsamlı arşiv",
-    "toplam_kayit": 21,
+    "toplam_kayit": 22,
     "son_guncelleme": "2026-02-06"
   },
   "sozler": [
@@ -344,6 +344,21 @@
       "eklenme_zamani": "2026-02-06 20:14:47",
       "kelime_sayisi": 6,
       "karakter_sayisi": 33
+    },
+    {
+      "id": 22,
+      "metin": "Test sözü - benzersiz 12345",
+      "hash": "8967fb49fca3e9f96ecde0034e6c35d43a61222ee4d5698f3363fe902078b7df",
+      "kategori": [
+        "Test"
+      ],
+      "tarih": null,
+      "kaynak": null,
+      "yer": null,
+      "notlar": null,
+      "eklenme_zamani": "2026-02-06 20:16:52",
+      "kelime_sayisi": 5,
+      "karakter_sayisi": 27
     }
   ],
   "kategoriler": []
