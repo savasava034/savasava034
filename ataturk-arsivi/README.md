@@ -2,6 +2,29 @@
 
 > Mustafa Kemal Atatürk'ün sözlerini, cümlelerini ve paragraflarını mükerrer olmayan bir şekilde arşivleyen kapsamlı sistem.
 
+## ✅ Durum: TAM FONKSİYONEL VE KULLANIMA HAZIR! 🎉
+
+## 📥 Hızlı İndirme ve Kurulum
+
+### Yöntem 1: ZIP İndirme (En Kolay)
+1. [Buradan ZIP dosyasını indirin](https://github.com/savasava034/savasava034/archive/refs/heads/main.zip)
+2. Dosyayı çıkartın
+3. `ataturk-arsivi/araclar` klasörüne gidin
+4. Başlatıcıyı çalıştırın:
+   - **Windows**: `baslatici.bat` dosyasına çift tıklayın
+   - **Linux/macOS**: Terminal'de `./baslatici.sh` yazın
+
+### Yöntem 2: Git ile Klonlama
+```bash
+git clone https://github.com/savasava034/savasava034.git
+cd savasava034/ataturk-arsivi/araclar
+./baslatici.sh  # veya Windows'ta: baslatici.bat
+```
+
+📖 **[Detaylı Kurulum Kılavuzu](KURULUM.md)** - Tüm platformlar için adım adım rehber
+
+---
+
 ## 🎯 Proje Amacı
 
 Bu proje, **Mustafa Kemal Atatürk**'ün tüm sözlerini, cümlelerini ve paragraflarını:
@@ -19,6 +42,17 @@ Bu proje, **Mustafa Kemal Atatürk**'ün tüm sözlerini, cümlelerini ve paragr
 cd ataturk-arsivi/araclar
 python3 interaktif_arayuz.py
 ```
+
+**VEYA Basitleştirilmiş Başlatıcı Kullan:**
+
+- **Windows**: `baslatici.bat` dosyasına çift tıklayın
+- **Linux/macOS**: `./baslatici.sh` komutunu çalıştırın
+
+Başlatıcı otomatik olarak:
+- ✅ Python'u kontrol eder
+- ✅ Örnek verileri yükleme seçeneği sunar
+- ✅ İnteraktif menüyü başlatır
+- ✅ Sistem bilgilerini gösterir
 
 ### 2. Örnek Verileri Yükle
 
