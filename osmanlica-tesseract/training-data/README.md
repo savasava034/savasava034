@@ -1,5 +1,22 @@
 # Eğitim Verileri
 
+## ⚠️ ÖNEMLİ: Bu Dizin Şu Anda BOŞ
+
+**Gerçek eğitim verisi yok!** Bu dizin, kullanıcıların kendi Osmanlıca belgelerini eklemesi için hazırlanmıştır.
+
+### Mevcut Durum:
+- ❌ `images/` - BOŞ (gerçek Osmanlıca belge taramaları yok)
+- ❌ `ground-truth/` - BOŞ (transkripsiyon dosyaları yok)
+- ❌ `fonts/` - BOŞ (Osmanlıca fontlar yok)
+- ✅ Sadece bu README dosyası var
+
+### Demo Örnekleri:
+Projenin `sample-data/` dizininde 5 **sentetik** örnek var (programatik olarak oluşturulmuş, gerçek tarama değil).
+
+**Detaylı bilgi için**: [`TRAINING-DATA-STATUS.md`](../TRAINING-DATA-STATUS.md)
+
+---
+
 Bu dizin, Tesseract model eğitimi için gerekli verileri içerir.
 
 ## Dizin Yapısı

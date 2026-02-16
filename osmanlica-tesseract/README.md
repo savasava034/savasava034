@@ -1,5 +1,20 @@
 # 🔤 Osmanlıca Tesseract OCR Projesi
 
+## ⚠️ ÖNEMLİ NOT: Eğitim Verisi Durumu
+
+**Bu proje bir ALTYAPI ve ARAÇ setidir.** Gerçek Osmanlıca belge taramalarıyla eğitilmiş bir model içermez.
+
+- ✅ **Var olan**: OCR altyapısı, eğitim scriptleri, araçlar, dokümantasyon
+- ✅ **Var olan**: 5 sentetik demo örneği (test amaçlı, gerçek tarama değil)
+- ❌ **Yok**: Gerçek Osmanlıca tarihi belge taramaları
+- ❌ **Yok**: Önceden eğitilmiş Osmanlıca modeli
+
+**Kullanıcılar kendi Osmanlıca belgelerini ekleyip model eğitmelidir.**
+
+📖 **Detaylı bilgi**: [TRAINING-DATA-STATUS.md](TRAINING-DATA-STATUS.md)
+
+---
+
 ## 📖 Proje Hakkında
 
 Bu proje, **Osmanlıca** (Arap harfli Türkçe) metinleri yüksek doğrulukla tanıyabilen bir Tesseract OCR motoru oluşturmak için hazırlanmıştır. En az işlemle en yüksek doğruluk oranına ulaşmak hedeflenmiştir.

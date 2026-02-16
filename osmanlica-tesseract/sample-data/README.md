@@ -1,5 +1,20 @@
 # Örnek Veri Seti
 
+## ⚠️ ÖNEMLİ: Bu Sentetik (Yapay) Örneklerdir
+
+**Bu görüntüler gerçek Osmanlı belge taramaları DEĞİLDİR!**
+
+- ✅ Programatik olarak oluşturulmuş (PIL kütüphanesi ile)
+- ✅ Test ve demo amaçlıdır
+- ❌ Gerçek tarihsel belge taraması değil
+- ❌ Model eğitimi için yeterli değil
+
+**Gerçek eğitim verisi için**: [`training-data/`](../training-data/) dizinine gerçek Osmanlıca belge taramalarını ekleyin.
+
+📖 **Detaylı bilgi**: [TRAINING-DATA-STATUS.md](../TRAINING-DATA-STATUS.md)
+
+---
+
 Bu dizin, test ve demo amaçlı örnek Osmanlıca görüntüleri ve ground truth dosyalarını içerir.
 
 ## Dizin Yapısı
