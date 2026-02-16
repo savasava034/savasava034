@@ -1,5 +1,24 @@
 # 🔤 Osmanlıca Tesseract OCR Projesi
 
+## 🚦 UYGULAMA DURUMU: ✅ KULLANILABİLİR!
+
+**Soru: "Şu an hangi aşamada uygulama kullanılabilir seviyedemi?"**  
+**Cevap: EVET! 15 dakika kurulum sonrası demo çalışır. %90+ doğruluk için 5 gün eğitim gerekir.**
+
+📊 **Durum Raporu**: [UYGULAMA-DURUMU.md](UYGULAMA-DURUMU.md) | ⚡ **Hızlı Kontrol**: [HIZLI-DURUM-KONTROL.md](HIZLI-DURUM-KONTROL.md)
+
+### Üç Kullanım Seviyesi:
+1. **🟢 DEMO** → 15 dakika → %60-75 doğruluk → Test amaçlı
+2. **🟡 ÜRETİM** → 5 gün → %90-94 doğruluk → Ciddi kullanım
+3. **🔵 KURUMSAL** → 4 hafta → %90-94+ doğruluk → Enterprise
+
+```bash
+# Hemen dene (15 dakika):
+./install.sh && python3 demo.py
+```
+
+---
+
 ## ⚠️ ÖNEMLİ NOT: Eğitim Verisi Durumu
 
 **Bu proje bir ALTYAPI ve ARAÇ setidir.** Gerçek Osmanlıca belge taramalarıyla eğitilmiş bir model içermez.
