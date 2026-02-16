@@ -8,7 +8,7 @@ Bu script, eğitilmiş Tesseract modelinin doğruluğunu değerlendirir.
 import os
 import sys
 import json
-from typing import Dict, List, Tuple
+from typing import Dict, List, Tuple, Optional
 import difflib
 from pathlib import Path
 
