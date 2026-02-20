@@ -1,0 +1,365 @@
+{
+  "metadata": {
+    "versiyon": "1.0",
+    "olusturma_tarihi": "2026-02-06",
+    "aciklama": "Mustafa Kemal Atatürk'ün sözleri, cümleleri ve paragraflarından oluşan kapsamlı arşiv",
+    "toplam_kayit": 22,
+    "son_guncelleme": "2026-02-06"
+  },
+  "sozler": [
+    {
+      "id": 1,
+      "metin": "Hayatta en hakiki mürşit ilimdir, fendir.",
+      "hash": "d9a2d2c124160c0f3c53d15a5cede80691d6565797561aed3c25f673c0cd2506",
+      "kategori": [
+        "Bilim",
+        "Eğitim"
+      ],
+      "tarih": "1924-09-22",
+      "kaynak": "Samsun'da Öğretmenlerle Konuşma",
+      "yer": null,
+      "notlar": "En bilinen sözlerinden biri",
+      "eklenme_zamani": "2026-02-06 20:14:38",
+      "kelime_sayisi": 6,
+      "karakter_sayisi": 41
+    },
+    {
+      "id": 2,
+      "metin": "Egemenlik kayıtsız şartsız milletindir.",
+      "hash": "081a48f3af86711e09c4121538e4bb1a0769582b48ec5ad565f98f02354578c7",
+      "kategori": [
+        "Cumhuriyet",
+        "Demokrasi"
+      ],
+      "tarih": "1920-04-23",
+      "kaynak": "TBMM Açılış Konuşması",
+      "yer": null,
+      "notlar": "Cumhuriyet'in temel prensibi",
+      "eklenme_zamani": "2026-02-06 20:14:38",
+      "kelime_sayisi": 4,
+      "karakter_sayisi": 39
+    },
+    {
+      "id": 3,
+      "metin": "Muhtaç olduğumuz kudret, damarlarımızdaki asil kanda mevcuttur.",
+      "hash": "a7b1a3f64aaf2855b3f23f4d10f1379289c8ffaca4cfc62242cce6b62b674216",
+      "kategori": [
+        "Milli Mücadele",
+        "Vatan"
+      ],
+      "tarih": "1927",
+      "kaynak": "Nutuk",
+      "yer": null,
+      "notlar": "Nutuk'tan alıntı",
+      "eklenme_zamani": "2026-02-06 20:14:38",
+      "kelime_sayisi": 7,
+      "karakter_sayisi": 63
+    },
+    {
+      "id": 4,
+      "metin": "Benim naçiz vücudum elbet bir gün toprak olacaktır, ancak Türkiye Cumhuriyeti ilelebet payidar kalacaktır.",
+      "hash": "8321c1edeba0d3a0b461eedacbb59be5b754e3d1d8b8f7aa175f6cf79d23e6ed",
+      "kategori": [
+        "Cumhuriyet",
+        "Vatan"
+      ],
+      "tarih": "1927",
+      "kaynak": "Gençliğe Hitabe",
+      "yer": null,
+      "notlar": "Ölümsüz vasiyet",
+      "eklenme_zamani": "2026-02-06 20:14:38",
+      "kelime_sayisi": 14,
+      "karakter_sayisi": 106
+    },
+    {
+      "id": 5,
+      "metin": "Ey Türk gençliği! Birinci vazifen, Türk istiklalini, Türk Cumhuriyetini, ilelebet muhafaza ve müdafaa etmektir.",
+      "hash": "9116af1fbac5684baa693e65bf44f008cd758a78021251a1d302e3def6cf0ef0",
+      "kategori": [
+        "Gençlik",
+        "Cumhuriyet",
+        "Vatan"
+      ],
+      "tarih": "1927",
+      "kaynak": "Gençliğe Hitabe",
+      "yer": null,
+      "notlar": "Gençliğe emanet",
+      "eklenme_zamani": "2026-02-06 20:14:38",
+      "kelime_sayisi": 14,
+      "karakter_sayisi": 111
+    },
+    {
+      "id": 6,
+      "metin": "Bir milletin varlık ve bağımsızlığı ancak kültür varlığı ve bağımsızlığı ile korunur.",
+      "hash": "c72c59b919b8a30fc201bb60479b20ace0957a6ecd58287c6691d1fc0d9695c5",
+      "kategori": [
+        "Kültür",
+        "Bağımsızlık"
+      ],
+      "tarih": "1931-09-01",
+      "kaynak": "Türk Tarih Kurumu Açılış Konuşması",
+      "yer": null,
+      "notlar": null,
+      "eklenme_zamani": "2026-02-06 20:14:38",
+      "kelime_sayisi": 12,
+      "karakter_sayisi": 85
+    },
+    {
+      "id": 7,
+      "metin": "Yurtta sulh, cihanda sulh.",
+      "hash": "cec9ab80a68e69713be1781dbe268e70d7875d40db1969570db5e0fa0f526ab4",
+      "kategori": [
+        "Barış",
+        "Dış Politika"
+      ],
+      "tarih": "1933-10-29",
+      "kaynak": "10. Yıl Nutku",
+      "yer": null,
+      "notlar": "Türk dış politikasının temeli",
+      "eklenme_zamani": "2026-02-06 20:14:38",
+      "kelime_sayisi": 4,
+      "karakter_sayisi": 26
+    },
+    {
+      "id": 8,
+      "metin": "Türk kadını, daha fazla ileriye, daha fazla yükselmeye hak kazanmış olduğunu anlamalıdır.",
+      "hash": "e5c65e3f21cf850d24b0e9fbd74f846b45f410a58f6b18fdd5bd02b8f2ca0f5b",
+      "kategori": [
+        "Kadın Hakları",
+        "Çağdaşlaşma"
+      ],
+      "tarih": "1923",
+      "kaynak": "Türk Kadın Birliği'ne Konuşma",
+      "yer": null,
+      "notlar": null,
+      "eklenme_zamani": "2026-02-06 20:14:38",
+      "kelime_sayisi": 12,
+      "karakter_sayisi": 89
+    },
+    {
+      "id": 9,
+      "metin": "Eğitim ateştir, ithal edilmez. Kendi içinizde çakmak gerekir.",
+      "hash": "0063be248d80d6c970c9c14dd5865cf7246366690738339d063df8147fc366a0",
+      "kategori": [
+        "Eğitim"
+      ],
+      "tarih": null,
+      "kaynak": "Öğretmenlerle Söyleşi",
+      "yer": null,
+      "notlar": null,
+      "eklenme_zamani": "2026-02-06 20:14:38",
+      "kelime_sayisi": 8,
+      "karakter_sayisi": 61
+    },
+    {
+      "id": 10,
+      "metin": "Millet, maarif ordusu denilen öğretmenlerin fedakarlığı sayesinde cehaletin karanlıklarından aydınlığa doğru yol alacaktır.",
+      "hash": "7e40ebccd906a10e1634366070d0aebfa413d7378e980c7b04d819b4e4793ba5",
+      "kategori": [
+        "Eğitim",
+        "Öğretmen"
+      ],
+      "tarih": "1925-08-25",
+      "kaynak": "Öğretmenler Kongresi",
+      "yer": null,
+      "notlar": null,
+      "eklenme_zamani": "2026-02-06 20:14:38",
+      "kelime_sayisi": 13,
+      "karakter_sayisi": 123
+    },
+    {
+      "id": 11,
+      "metin": "Hayat demek mücadele demektir. Hayatta başarılı olmak, mücadelede başarılı olmak demektir.",
+      "hash": "deca4b21789fb7b33a43a07936bda3456b1d826db28d3a9aee21add0d89f45a9",
+      "kategori": [
+        "Yaşam Felsefesi",
+        "Mücadele"
+      ],
+      "tarih": null,
+      "kaynak": "Gençlerle Söyleşi",
+      "yer": null,
+      "notlar": null,
+      "eklenme_zamani": "2026-02-06 20:14:38",
+      "kelime_sayisi": 11,
+      "karakter_sayisi": 90
+    },
+    {
+      "id": 12,
+      "metin": "Ordular! İlk hedefiniz Akdeniz'dir. İleri!",
+      "hash": "0fe6afd8267ba50bd0d55fe932dea740ddcb82010071509fb2bfb8b1d739869c",
+      "kategori": [
+        "Milli Mücadele",
+        "Komutanlık"
+      ],
+      "tarih": "1922-08-26",
+      "kaynak": "Büyük Taarruz Emri",
+      "yer": "Afyonkarahisar",
+      "notlar": null,
+      "eklenme_zamani": "2026-02-06 20:14:38",
+      "kelime_sayisi": 5,
+      "karakter_sayisi": 42
+    },
+    {
+      "id": 13,
+      "metin": "Ben Türk evladının yapamayacağı iş yoktur diye düşünüyorum.",
+      "hash": "0c5cbccd8d050ffd39d6fe16b60e3bc22ac918426c9c88e56b28588cbd76601b",
+      "kategori": [
+        "Özgüven",
+        "Gençlik"
+      ],
+      "tarih": null,
+      "kaynak": "Gençlerle Konuşma",
+      "yer": null,
+      "notlar": null,
+      "eklenme_zamani": "2026-02-06 20:14:38",
+      "kelime_sayisi": 8,
+      "karakter_sayisi": 59
+    },
+    {
+      "id": 14,
+      "metin": "Bir ulusun gerçek kurtarıcıları, yalnız ve ancak öğretmenlerdir.",
+      "hash": "4a61c5e9fa0e831bec506e666b2a1892e86dda5f3cadebdf213e35280666a15f",
+      "kategori": [
+        "Eğitim",
+        "Öğretmen"
+      ],
+      "tarih": "1922-11-24",
+      "kaynak": "Öğretmenler Günü Konuşması",
+      "yer": null,
+      "notlar": null,
+      "eklenme_zamani": "2026-02-06 20:14:38",
+      "kelime_sayisi": 8,
+      "karakter_sayisi": 64
+    },
+    {
+      "id": 15,
+      "metin": "Dünyada her şey için, medeniyet için, hayat için, muvaffakiyet için en hakiki mürşit ilimdir, fendir.",
+      "hash": "5bcf061faf4bd3acba60bd86395e63008bbfc2fd3ef31572352d34b24a1fedf0",
+      "kategori": [
+        "Bilim",
+        "Çağdaşlaşma",
+        "Eğitim"
+      ],
+      "tarih": "1924-09-22",
+      "kaynak": "Samsun'da Öğretmenlerle Konuşma",
+      "yer": null,
+      "notlar": "Ünlü sözün tam hali",
+      "eklenme_zamani": "2026-02-06 20:14:38",
+      "kelime_sayisi": 15,
+      "karakter_sayisi": 101
+    },
+    {
+      "id": 16,
+      "metin": "Cumhuriyet, karakteri, kuvvetli, kudretli olduğu kadar merhametli ve muhterem insanlar ister.",
+      "hash": "8c1c41497ecc4c5a9cc827ebe49bf01009c5d8e8635c0a61c87f95f02928a7be",
+      "kategori": [
+        "Cumhuriyet",
+        "Karakter"
+      ],
+      "tarih": null,
+      "kaynak": "TBMM Açılış Konuşması",
+      "yer": null,
+      "notlar": null,
+      "eklenme_zamani": "2026-02-06 20:14:38",
+      "kelime_sayisi": 11,
+      "karakter_sayisi": 93
+    },
+    {
+      "id": 17,
+      "metin": "Gerçek güzellik, güzelliğin esaslı olanıdır. Cehalete dayanan güzellik göz boyayan bir maskeden başka bir şey değildir.",
+      "hash": "299ec2ced71dfef554f0531df2057bcc456c7058235f9bd6349808d3b30e7db8",
+      "kategori": [
+        "Eğitim",
+        "Kadın"
+      ],
+      "tarih": null,
+      "kaynak": "İzmir'de Konuşma",
+      "yer": null,
+      "notlar": null,
+      "eklenme_zamani": "2026-02-06 20:14:38",
+      "kelime_sayisi": 16,
+      "karakter_sayisi": 119
+    },
+    {
+      "id": 18,
+      "metin": "İnsanlık aleminde yükselmenin tek yolu da medeniyet yolunda yürümektir. Medeniyet yolunda yürümek bir milletin hayatı için esastır.",
+      "hash": "12131e3c5aa2c9d541825019231eb240c9976b5e531689cc76ee74bdf062d7d1",
+      "kategori": [
+        "Medeniyet",
+        "Çağdaşlaşma"
+      ],
+      "tarih": "1925-08-30",
+      "kaynak": "Kastamonu Konuşması",
+      "yer": null,
+      "notlar": null,
+      "eklenme_zamani": "2026-02-06 20:14:38",
+      "kelime_sayisi": 17,
+      "karakter_sayisi": 131
+    },
+    {
+      "id": 19,
+      "metin": "Fikri hür, vicdanı hür, irfanı hür nesiller yetiştirmek ülkünün temelidir.",
+      "hash": "6536262a301ffc527cd26703eb5bc74dcbc981825e17ce758c346da5f55274a7",
+      "kategori": [
+        "Eğitim",
+        "Özgürlük",
+        "Gençlik"
+      ],
+      "tarih": null,
+      "kaynak": "Öğretmenlerle Konuşma",
+      "yer": null,
+      "notlar": null,
+      "eklenme_zamani": "2026-02-06 20:14:38",
+      "kelime_sayisi": 10,
+      "karakter_sayisi": 74
+    },
+    {
+      "id": 20,
+      "metin": "Türk milletinin yürümekte olduğu terakkî ve medeniyet yolunda, elinde ve kafasında olmak üzere tuttuğu meşale müspet ilimdir.",
+      "hash": "4791c136f83bed1e2f88d4e909162c7cdb3a5e8640db6255842a607a08e933bb",
+      "kategori": [
+        "Bilim",
+        "İlerleme",
+        "Medeniyet"
+      ],
+      "tarih": "1931-04-15",
+      "kaynak": "TTK Genel Kurulu Açılış Konuşması",
+      "yer": null,
+      "notlar": null,
+      "eklenme_zamani": "2026-02-06 20:14:38",
+      "kelime_sayisi": 17,
+      "karakter_sayisi": 125
+    },
+    {
+      "id": 21,
+      "metin": "Bu yeni ve benzersiz bir sözüdür.",
+      "hash": "dab341d38e47562802ab0c760272f0453a05eb6a3db4947f053c945cd39e9f7f",
+      "kategori": [
+        "Test"
+      ],
+      "tarih": null,
+      "kaynak": null,
+      "yer": null,
+      "notlar": null,
+      "eklenme_zamani": "2026-02-06 20:14:47",
+      "kelime_sayisi": 6,
+      "karakter_sayisi": 33
+    },
+    {
+      "id": 22,
+      "metin": "Test sözü - benzersiz 12345",
+      "hash": "8967fb49fca3e9f96ecde0034e6c35d43a61222ee4d5698f3363fe902078b7df",
+      "kategori": [
+        "Test"
+      ],
+      "tarih": null,
+      "kaynak": null,
+      "yer": null,
+      "notlar": null,
+      "eklenme_zamani": "2026-02-06 20:16:52",
+      "kelime_sayisi": 5,
+      "karakter_sayisi": 27
+    }
+  ],
+  "kategoriler": []
+}
