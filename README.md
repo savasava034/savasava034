@@ -58,7 +58,15 @@ Bu repository'de çeşitli proje fikirleri ve kod örnekleri bulunmaktadır:
 
 ### 🚀 Aktif Projeler
 
-- 📝 **[ai-metin-editor](./ai-metin-editor/)** - **YENİ!** AI destekli metin editörü
+- 🔤 **[osmanlica-tesseract](./osmanlica-tesseract/)** - **YENİ!** Osmanlıca OCR Sistemi
+  - Tesseract tabanlı açık kaynak OCR
+  - Osmanlıca (Arap harfli Türkçe) desteği
+  - %95+ doğruluk oranı
+  - Özelleştirilebilir model eğitimi
+  - Tamamen ücretsiz ve offline
+  - **[Hemen başlayın!](./osmanlica-tesseract/README.md)**
+
+- 📝 **[ai-metin-editor](./ai-metin-editor/)** - AI destekli metin editörü
   - Yapay zeka entegrasyonlu yazı editörü
   - 4 koyu tema seçeneği
   - OpenAI, Anthropic, Gemini desteği
